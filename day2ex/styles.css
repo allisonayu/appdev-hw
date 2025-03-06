@@ -1,0 +1,55 @@
+body {
+    background: #e8ebe4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px /*spacing between all letters*/
+}
+
+/*#hero for id, .hero for class*/
+#hero {
+    text-align: center;
+    padding: 5rem; /*adds space in between everything*/ 
+    /*1rem=default font size on user browser (usually 12 or 16 pixels); use rem most of the time*/
+}
+
+#hero > h3 { /*selects everything one level inside of the div (whereas #hero h3 selects everything inside div)*/
+    margin-top: 0;
+}
+
+#hero > h1 {
+    margin-bottom: 0;
+}
+
+#hero p {
+    line-height: 30px; /*spacing between lines*/
+}
+
+#hero img {
+    border-radius: 20px; /*rounded edges to photos*/
+}
+
+hr { /*don't have hr rn*/
+    border-radius: 50px; /*100% --> fades in and out*/
+    width: 50%; /*50% of entire screen; margin is auto rn so it auto-centers things*/
+}
+
+#experience-title {
+    text-align: center;
+}
+
+.experience {
+    width: 20rem;
+    margin: 1rem;
+
+    padding: 2rem;
+    border-width: 1px;
+    border-style: dashed;
+    margin-bottom: 2rem; /*vs padding which puts space between content and borders*/
+    border-radius: 20px;
+}
+
+#experience-container {
+    display: flex;
+    flex-wrap: wrap; /*makes things wrap around when too squished; default is unwrapped*/
+    justify-content: space-around;
+}
+
